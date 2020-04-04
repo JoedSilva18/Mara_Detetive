@@ -48,3 +48,23 @@ Ex: Rússia anuncia cura para coronavirus. Fonte: https://www.saude.gov.br/faken
 | | |
 |:-------------------------:|:-------------------------:|
 <img src="https://i.imgur.com/nA5BxUp.jpg" height="550" width="280"> | <img src="https://i.imgur.com/LX2TREY.jpg" height="550" width="280">
+
+As notícias utilizadas para treinar o modelo foram tiradas do site: https://www.saude.gov.br/fakenews
+
+#### Alguns exemplos de noticias utilizadas são:
+- [Utilizar álcool em gel nas mãos para prevenir coronavírus altera bafômetro nas blitz](https://www.saude.gov.br/fakenews/46467-utilizar-alcool-em-gel-nas-maos-para-prevenir-coronavirus-altera-bafometro-nas-blitz-e-fake-news)
+- [Álcool em gel é a mesma coisa que nada](https://www.saude.gov.br/fakenews/46463-alcool-em-gel-e-a-mesma-coisa-que-nada-e-fake-news)
+- [Aplicativo Coronavírus-SUS, do Governo do Brasil, é inseguro](https://www.saude.gov.br/fakenews/46586-aplicativo-coronavirus-sus-do-governo-do-brasil-e-inseguro-e-fake-news)
+- [Áudio do professor titular de cirurgia torácica da USP/HC/Incor](https://www.saude.gov.br/fakenews/46575-audio-do-professor-titular-de-cirurgia-toracica-da-usp-hc-incor-e-verdade)
+- [Ministro da Saúde Luiz Henrique pede para compartilhar áudio](https://www.saude.gov.br/fakenews/46588-ministro-da-saude-pede-para-compartilhar-audio-com-informacoes-do-coronavirus-e-fake-news)
+- [Beber muita água e fazer gargarejo com água morna, sal e vinagre previne coronavírus](https://www.saude.gov.br/fakenews/46582-beber-muita-agua-e-fazer-gargarejo-com-agua-morna-sal-e-vinagre-previne-coronavirus-e-fake-news)
+- [Chá de erva doce e coronavírus](https://www.saude.gov.br/fakenews/46440-cha-de-erva-doce-e-coronavirus-e-fake-news)
+- [Governo do Brasil anuncia vacina do coronavírus](https://www.saude.gov.br/fakenews/46585-governo-do-brasil-anuncia-vacina-do-coronavirus-e-fake-news)
+- [Médicos tailandeses curam coronavírus em 48h](https://www.saude.gov.br/fakenews/46367-medicos-tailandeses-curam-coronavirus-em-48h-e-fake-news)
+- [Receita de coco que cura coronavírus](https://www.saude.gov.br/fakenews/46479-receita-de-coco-que-cura-coronavirus-e-fake-news)
+- [Tribunal chinês para matar 20 mil pacientes com coronavírus](https://www.saude.gov.br/fakenews/46439-tribunal-chines-para-matar-20-mil-pacientes-com-coronavirus-e-fake-news)
+
+
+
+
+
