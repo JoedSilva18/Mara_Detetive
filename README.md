@@ -37,7 +37,14 @@ As imagens abaixo, mostram os possíveis cenários de interação. Por se tratar
 
 Ex: Fake News sobre o áudio enviado pelo ministro da saúde. Fonte: https://www.saude.gov.br/fakenews/46588-ministro-da-saude-pede-para-compartilhar-audio-com-informacoes-do-coronavirus-e-fake-news
 
-| | | |
-|:-------------------------:|:-------------------------:|:-------------------------:|
+| | |
+|:-------------------------:|:-------------------------:|
 <img src="https://i.imgur.com/p8zookR.jpg" height="500" width="280"> | <img src="https://i.imgur.com/idIekNJ.jpg" height="500" width="280"> 
 
+No exemplo abaixo, é solicitada a analise de uma noticia na qual o modelo ainda não foi treinado. Nesse caso, ele busca algo no qual ele acha que pode ser o que o usuário esta pedindo. Quando o usuário informa que aquela informação não é o que ele solicitou, enviamos um SMS notificando algum responsavel que existe uma possivel nova fake news se espalhando e com isso, ele pode ir analisa-la. Essa busca que o usuario fez, poderia ficar salvo em um banco e ser exibido em uma pagina web(Ainda não foi implementado) e quando o responsavel receber a notificação, ele pode ir nesse site obter mais informações sobre a nova possivel Fake News.
+
+Ex: Rússia anuncia cura para coronavirus. Fonte: https://www.saude.gov.br/fakenews/46653-russia-anuncia-cura-para-coronavirus-e-fake-news (No momento, é uma fake news - 03/04/2020)
+
+| | |
+|:-------------------------:|:-------------------------:|
+<img src="https://i.imgur.com/nA5BxUp.jpg" height="500" width="280"> | <img src="https://i.imgur.com/LX2TREY.jpg" height="500" width="280">
