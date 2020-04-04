@@ -22,7 +22,7 @@ Serviço que possibilita o envio de SMS para algum usuário. No projeto usamos p
 ### [IBM Waston Discovery:]("https://www.ibm.com/br-pt/cloud/watson-discovery")
 Serviço que ajuda na criação  de aplicativos relacionados a dados, contando com exploração cognitiva e Inteligência Artificial. Utilizamos ele para criar modelos e treiná-los com notícias falsas e verdadeiras. Além de inserir as notícias, podemos treinar a relevância dos resultados para tornar as respostas mais assertivas. Conforme os usuários usam o serviço, podemos capturar as mensagens que eles estão enviando e usar isso para o treinamento.
 
-### [IBM Waston Assistent:]("https://www.ibm.com/cloud/watson-assistant/")
+### [IBM Waston Assistant:]("https://www.ibm.com/cloud/watson-assistant/")
 Serviço que auxilia na criação de chatbots. No projeto utilizamos para fazer a ponte entre o serviço de envio de mensagens no Whatsapp disponibilizado pela Twilio e o Watson Discovery.
 Funciona assim: Assim que o Watson Assistant recebe uma mensagem, ele analisa qual a intenção do usuário ao enviar aquela mensagem(por exemplo, uma saudação, despedida ou um envio de alguma notícia para análise). Enquanto o assistant não entende que o usuário quer analisar uma notícia, ele apenas vai interagindo com a pessoa com as mensagens que ele foi treinado para enviar. A partir do momento que ele entende que a mensagem é uma notícia que deve ser analisada, ele envia essa mensagem para o Watson Discovery para que ele busque por informações sobre a veracidade. Quando o Discovery obtém uma resposta, ele a retorna e a partir daí o Assistant pode confirmar com o usuário se é aquilo que ele estava buscando ou não.
 
