@@ -183,12 +183,6 @@ async function main(parametros) {
     // nao foi treinado com essa noticia
     else if (message.result.output.intents[0].intent === 'Negacao') {
 
-      // Nesse caso, simulamos o envio de um SMS para o celular, onde o numero
-      // poderia ser de uma pessoa responsavel por analisar as fake news. Nesse caso
-      // ele seria notificado
-      parametros.mensagem = 'Uma nova Fake News pode estar se espalhando';
-      await sendSMS(parametros);
-
       // Verifica se existe alguma resposta salva no banco
       const result = await client.db('whatsapp').collection('answers').find({
         sessionId: session_id,
@@ -199,6 +193,13 @@ async function main(parametros) {
         await sendWhatsappMessage(parametros);
       } else {
         if (text) {
+
+          // Nesse caso, simulamos o envio de um SMS para o celular, onde o numero
+          // poderia ser de uma pessoa responsavel por analisar as fake news. Nesse caso
+          // ele seria notificado
+          parametros.mensagem = 'Uma nova Fake News pode estar se espalhando';
+          await sendSMS(parametros);
+
           parametros.mensagem = text;
           await sendWhatsappMessage(parametros);
         }
