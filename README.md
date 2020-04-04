@@ -8,7 +8,7 @@ O Jarvis Assistant nasceu com o propósito de se tornar um assistente virtual ca
 Podemos perceber que esse problema é causado muitas vezes pela preguiça de ir atrás da notícia em fontes confiáveis ou também pela auto confiança de que aquilo é realmente verdade.
 
 ### A Idéia
-Diante desse cenário e da dificuldade em controlar a velocidade que uma notícia falsa pode se propagar, imaginamos um cenário onde o usuário antes de encaminhar uma notícia que recebeu pelo Whatsapp a algum amigo ou grupo específico, ela possa encaminhar essa mensagem para um Bot que consiga extrair aquela notícia e através de um modelo pré-treinado com notícias falsas e verdadeira, consiga saber se aquela notícia é verdadeira ou não.
+Diante desse cenário e da dificuldade em controlar a velocidade que uma notícia falsa pode se propagar, imaginamos um cenário onde o usuário antes de encaminhar uma notícia que recebeu pelo Whatsapp a algum amigo ou grupo específico, ela possa encaminhar essa mensagem para um Bot que consiga extrair aquela notícia e através de um modelo pré-treinado com notícias falsas e verdadeiras, consiga saber se aquela notícia é verdadeira ou não.
 
 ### Como fazer isso:
 Para colocar essa idéia em prática utilizaremos algumas ferramentas já disponíveis no mercado que agilizam muito no processo de desenvolvimento: 
@@ -24,11 +24,11 @@ Serviço que ajuda na criação  de aplicativos relacionados a dados, contando c
 
 ### [IBM Waston Assistent:]("https://www.ibm.com/cloud/watson-assistant/")
 Serviço que auxilia na criação de chatbots. No projeto utilizamos para fazer a ponte entre o serviço de envio de mensagens no Whatsapp disponibilizado pela Twilio e o Watson Discovery.
-Funciona assim: Assim que o Watson Assistant recebe uma mensagem, ele analisa qual a intenção do usuário ao enviar aquela mensagem(por exemplo, uma saudação, Despedida ou um envio de alguma notícia para análise). Enquanto o assistant não entende que o usuário quer analisar uma notícia, ele apenas vai interagindo com a pessoa com as mensagens que ele foi treinado para enviar. A partir do momento que ele entende que a mensagem é uma notícia que deve ser analisada, ele envia essa mensagem para o Watson Discovery para que ele busque por informações sobre a veracidade. Quando o Discovery obtém uma resposta, ele a retorna e a partir daí o Assistant pode confirmar com o usuário se é aquilo que ele estava buscando ou não.
+Funciona assim: Assim que o Watson Assistant recebe uma mensagem, ele analisa qual a intenção do usuário ao enviar aquela mensagem(por exemplo, uma saudação, despedida ou um envio de alguma notícia para análise). Enquanto o assistant não entende que o usuário quer analisar uma notícia, ele apenas vai interagindo com a pessoa com as mensagens que ele foi treinado para enviar. A partir do momento que ele entende que a mensagem é uma notícia que deve ser analisada, ele envia essa mensagem para o Watson Discovery para que ele busque por informações sobre a veracidade. Quando o Discovery obtém uma resposta, ele a retorna e a partir daí o Assistant pode confirmar com o usuário se é aquilo que ele estava buscando ou não.
 
 ### [IBM Cloud Functions:]("https://developer.ibm.com/api/view/cloudfunctions-prod:cloud-functions#Overview")
 
-Para unir todos esses serviços criamos um script em NodeJS e colocamos  no Cloud Functions da IBM.
+Para unir todos esses serviços criamos um script em NodeJS e colocamos no Cloud Functions da IBM.
 
 ### Como testar o serviço:
 - Enviar uma mensagem com o código **join topic-ready** para o número +1 415 523 8886. A partir daí você poderá interagir com o assistente.
