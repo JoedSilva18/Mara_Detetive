@@ -85,6 +85,9 @@ async function main(parametros) {
         await sendWhatsappMessage(parametros);
       }
 
+      // Salva a mensagem enviada pelo usuario
+      await addQueries(parametros.From, msgNoBreak);
+
       // Faz uma requisicao ao Watson Discovery para procurar a noticia
       const queryParams = {
         environmentId: parametros.ENVIRONMENT,
@@ -156,6 +159,13 @@ async function main(parametros) {
           parametros.mensagem = result[0].result.answers[i];
           await sendWhatsappMessage(parametros);
         }
+
+        // Envia a fonte
+        parametros.mensagem = 'Link da fonte para mais informações';
+        await sendWhatsappMessage(parametros);
+
+        parametros.mensagem = result[0].result.source;
+        await sendWhatsappMessage(parametros);
 
         // Apaga a resposta do banco
         await removeAnswers(session_id);
@@ -311,6 +321,18 @@ async function removeAnswers(session_id) {
 
   await client.db('whatsapp').collection('answers').remove({
     sessionId: session_id,
+  });
+}
+
+async function addQueries(From, querie) {
+  const client = await mongodb.MongoClient.connect(uri);
+
+  const number = From.split(':');
+
+  await client.db('whatsapp').collection('queries').insert({
+    number: number[1],
+    querie: querie,
+    date: new Date().now
   });
 }
 
