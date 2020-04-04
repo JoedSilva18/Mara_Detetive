@@ -34,3 +34,10 @@ Para unir todos esses serviços criamos um script em NodeJS e colocamos  no Clou
 - Enviar uma mensagem com o código **join topic-ready** para o número +1 415 523 8886. A partir daí você poderá interagir com o assistente.
 
 As imagens abaixo, mostram os possíveis cenários de interação. Por se tratar de um ambiente de testes, ainda não foi coberto todos os possíveis cenários e erros podem vir a acontecer.
+
+Ex: Fake News sobre o áudio enviado pelo ministro da saúde. Fonte: https://www.saude.gov.br/fakenews/46588-ministro-da-saude-pede-para-compartilhar-audio-com-informacoes-do-coronavirus-e-fake-news
+
+| | | |
+|:-------------------------:|:-------------------------:|:-------------------------:|
+<img src="https://i.imgur.com/p8zookR.jpg" height="500" width="280"> | <img src="https://i.imgur.com/idIekNJ.jpg" height="500" width="280"> 
+
