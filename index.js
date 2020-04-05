@@ -9,15 +9,17 @@ const { IamAuthenticator } = require('ibm-watson/auth');
 
 const sleep = require('util').promisify(setTimeout);
 
-//String de conexao do mongodb
-const uri = 'mongodb+srv://jarvis:uploaddeploy@cluster0-6gbip.mongodb.net/test?retryWrites=true&w=majority';
-
+// String de conexao do mongodb
+let uri;
+// Instancias do Watson
 let discovery;
 let assistant;
 
 async function main(parametros) {
 
   try {
+    uri = parametros.MONGO;
+
     // Conexao com o mongodb
     const client = await mongodb.MongoClient.connect(uri);
 
@@ -207,7 +209,7 @@ async function main(parametros) {
           // Nesse caso, simulamos o envio de um SMS para o celular, onde o numero
           // poderia ser de uma pessoa responsavel por analisar as fake news. Nesse caso
           // ele seria notificado
-          parametros.mensagem = 'Uma nova Fake News pode estar se espalhando';
+          parametros.mensagem = '[Exemplo de notificação]Uma nova Fake News pode estar se espalhando';
           await sendSMS(parametros);
 
           parametros.mensagem = text;
@@ -268,7 +270,7 @@ async function sendSMS(parametros) {
   await client.messages.create({
     body: parametros.mensagem,
     to: number[1],
-    from: '+17327197593',
+    from: parametros.SMS_NUMBER,
   });
 }
 
