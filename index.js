@@ -219,6 +219,16 @@ async function main(parametros) {
       }
     }
 
+    else if (message.result.output.intents[0].intent === 'Restaurante') {
+      parametros.mensagem = text;
+      await sendWhatsappMessage(parametros);
+    }
+
+    else if (message.result.output.intents[0].intent === 'Farmacia') {
+      parametros.mensagem = text;
+      await sendWhatsappMessage(parametros);
+    }
+
     return {
       statusCode: 200,
       headers: { 'Content-Type': 'application/json' },
@@ -290,14 +300,15 @@ async function createSession(From, assistantId) {
 async function deleteSession(session_id, assistantId) {
   const client = await mongodb.MongoClient.connect(uri);
 
-  await assistant.deleteSession({
-    assistantId: assistantId,
-    sessionId: session_id,
-  });
-
   await client.db('whatsapp').collection('sessions').remove({
     sessionId: session_id
   });
+
+  /*await assistant.deleteSession({
+    assistantId: assistantId,
+    sessionId: session_id,
+  });*/
+
 }
 
 // Funcao que envia uma mensagem para o watson assitent
@@ -332,7 +343,7 @@ async function addQueries(From, querie) {
   await client.db('whatsapp').collection('queries').insert({
     number: number[1],
     querie: querie,
-    date: new Date().now
+    date: new Date()
   });
 }
 
