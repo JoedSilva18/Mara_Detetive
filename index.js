@@ -222,11 +222,17 @@ async function main(parametros) {
     else if (message.result.output.intents[0].intent === 'Restaurante') {
       parametros.mensagem = text;
       await sendWhatsappMessage(parametros);
+
+      // Remove a resposta do banco
+      await removeAnswers(session_id);
     }
 
     else if (message.result.output.intents[0].intent === 'Farmacia') {
       parametros.mensagem = text;
       await sendWhatsappMessage(parametros);
+
+      // Remove a resposta do banco
+      await removeAnswers(session_id);
     }
 
     return {
