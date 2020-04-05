@@ -1,9 +1,9 @@
-# Jarvis Assistant
+# Mara Detetive
 
 **Este repositório contém arquivos e códigos que foram criados no prazo de alguns dias apenas para fins de validação e testes da nossa idéia. Em nenhum momento nos preocupamos com a arquitetura por trás para obtermos um sistema mais robusto. Caso a idéia vá pra frente, tudo isso será refeito e reestruturado.**
 
 ### Introdução
-O Jarvis Assistant nasceu com o propósito de se tornar um assistente virtual capaz de identificar a veracidade de uma notícia. Com o avanço das redes sociais e principalmente dos aplicativos de envio de mensagens, também tivemos um avanço da disseminação de notícias falsas, uma vez que as pessoas estão conseguindo obter informações (nem sempre verdadeiras) de forma mais acelerada.
+O Mara Detetive nasceu com o propósito de se tornar um assistente virtual capaz de identificar a veracidade de uma notícia. Com o avanço das redes sociais e principalmente dos aplicativos de envio de mensagens, também tivemos um avanço da disseminação de notícias falsas, uma vez que as pessoas estão conseguindo obter informações (nem sempre verdadeiras) de forma mais acelerada.
 
 Podemos perceber que esse problema é causado muitas vezes pela preguiça de ir atrás da notícia em fontes confiáveis ou também pela auto confiança de que aquilo é realmente verdade.
 
