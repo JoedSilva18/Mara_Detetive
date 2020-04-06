@@ -37,6 +37,10 @@ Para unir todos esses serviços criamos um script em NodeJS e colocamos no Cloud
 
 ### Como testar o serviço:
 - Enviar uma mensagem com o código **join topic-ready** para o número +1 415 523 8886. A partir daí você poderá interagir com o assistente.
+Ex:
+<p align="center">
+<img src="https://i.imgur.com/qIzPuU1.jpg" height="260" width="300">
+</p>
 
 As imagens abaixo, mostram os possíveis cenários de interação. Por se tratar de um ambiente de testes, ainda não foi coberto todos os possíveis cenários e erros podem vir a acontecer.
 
