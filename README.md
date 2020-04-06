@@ -10,10 +10,10 @@
 ### Introdução
 A Mara Detetive nasceu com o propósito de se tornar um assistente virtual capaz de não só, identificar a veracidade de uma notícia como também auxiliar na disseminação de informações. Com o avanço das redes sociais e principalmente dos aplicativos de envio de mensagens, também tivemos um avanço da disseminação de notícias falsas, uma vez que as pessoas estão conseguindo obter informações (nem sempre verdadeiras) de forma mais acelerada.
 
-Podemos perceber que esse problema é causado muitas vezes pela preguiça de ir atrás da notícia em fontes confiáveis ou também pela auto confiança de que aquilo é realmente verdade. Além disso,as pessoas sentem cada vez mais necessidade de conseguir informações de maneira facil e rápido para problemas reais do seu dia da dia.
+Podemos perceber que esse problema é causado muitas vezes pela preguiça de ir atrás da notícia em fontes confiáveis ou também pela auto confiança de que aquilo é realmente verdade. Além disso, as pessoas sentem cada vez mais necessidade de conseguir informações de maneira fácil e rápida para problemas reais do seu dia da dia.
 
 ### A Ideia
-Diante desse cenário e da dificuldade em controlar a velocidade que uma notícia falsa pode se propagar, imaginamos um cenário onde o usuário antes de encaminhar uma notícia que recebeu pelo Whatsapp a algum amigo ou grupo específico, ela possa encaminhar essa mensagem para um Bot que consiga extrair aquela notícia e através de um modelo pré-treinado com notícias falsas e verdadeiras, consiga saber se aquela notícia é verdadeira ou não. Não só isso como também, a pessoa poderá procurar por um determinado restaurante o farmácia visto que com a quarentena muitos estabelecimentos estão fechados. 
+Diante desse cenário e da dificuldade em controlar a velocidade que uma notícia falsa pode se propagar, imaginamos um cenário onde o usuário antes de encaminhar uma notícia que recebeu pelo Whatsapp à algum amigo ou grupo específico, ele possa encaminhar essa mensagem para um Bot que consiga extrair aquela notícia e através de um modelo pré-treinado com notícias falsas e verdadeiras, consiga saber se aquela notícia é verdadeira ou não. Não só isso como também, a pessoa poderá procurar por um determinado restaurante ou farmácia visto que com a quarentena muitos estabelecimentos estão fechados. 
 
 ### Como fazer isso:
 Para colocar essa ideia em prática utilizaremos algumas ferramentas já disponíveis no mercado que agilizam muito no processo de desenvolvimento: 
@@ -51,9 +51,9 @@ Ex: Fake News sobre o áudio enviado pelo ministro da saúde. Fonte: https://www
 |:-------------------------:|:-------------------------:|
 <img src="https://i.imgur.com/BLAEasB.jpg" height="550" width="280"> | <img src="https://i.imgur.com/oTXOWpJ.jpg" height="550" width="280"> 
 
-No exemplo abaixo, é solicitada a análise de uma notícia na qual o modelo ainda não foi treinado. Nesse caso, ele busca algo no qual ele acha que pode ser o que o usuário está pedindo. Quando o usuário informa que aquela informação não é o que ele solicitou, enviamos um SMS notificando algum responsável que existe uma possível nova fake news se espalhando e com isso, ele pode ir analisá-la. Essa busca que o usuário fez, poderia ficar salvo em um banco e ser exibido em uma página web(Ainda não foi implementado) e quando o responsável receber a notificação, ele pode ir nesse site obter mais informações sobre a nova possível Fake News.
+No exemplo abaixo, é solicitada a análise de uma notícia na qual o modelo ainda não foi treinado. Nesse caso, ele busca algo no qual ele acha que pode ser o que o usuário está pedindo. Quando o usuário informa que aquela informação não é o que ele solicitou, enviamos um SMS notificando algum responsável que existe uma possível nova fake news se espalhando e, com isso, ele pode ir analisá-la. Essa busca que o usuário faz, poderia ficar salva em um banco e ser exibida em uma página web (Ainda não foi implementada) e quando o responsável receber a notificação, ele pode ir nesse site obter mais informações sobre a nova possível Fake News.
 
-Ex: Rússia anuncia cura para coronavirus. Fonte: https://www.saude.gov.br/fakenews/46653-russia-anuncia-cura-para-coronavirus-e-fake-news (No momento, é uma fake news - 03/04/2020)
+Ex: Rússia anuncia cura para coronavírus. Fonte: https://www.saude.gov.br/fakenews/46653-russia-anuncia-cura-para-coronavirus-e-fake-news (No momento, é uma fake news - 03/04/2020)
 
 | | |
 |:-------------------------:|:-------------------------:|
