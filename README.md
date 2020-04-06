@@ -70,12 +70,12 @@ As notícias utilizadas para treinar o modelo foram tiradas do site: https://www
 - [Tribunal chinês para matar 20 mil pacientes com coronavírus](https://www.saude.gov.br/fakenews/46439-tribunal-chines-para-matar-20-mil-pacientes-com-coronavirus-e-fake-news)
 
 # Indo além...
-Recentemente a Polícia Federal percorreu por várias rodovias mapeando todos os estabelecimentos que estão abertos durante a quarentena visto que muitos serviços foram fechados. Tudo isso foi feito para ajudar os caminhoneiros a encontrar restaurantes e serviços durante esse período. Para ajudar a disseminar essa informação, também colocamos uma "Intent" que identifica se alguem está em busca de algum restaurante:
+Recentemente a Polícia Federal percorreu por várias rodovias mapeando todos os estabelecimentos que estão abertos durante a quarentena visto que muitos serviços foram fechados. Tudo isso foi feito para ajudar os caminhoneiros a encontrar restaurantes e serviços durante esse período. Para ajudar a disseminar essa informação, também colocamos uma "Intent" que identifica se alguém está em busca de algum restaurante:
 | |
 |:-------------------------:|
 <img src="https://i.imgur.com/DTv1SeN.jpg" height="550" width="280"> 
 
-Junto a esse serviço, também inserimos uma "Intent" que pode ajudar a pessoa a encontrar remédios durante essta crise, também alertando sobre os riscos da hidroxicloroquina:
+Junto a esse serviço, também inserimos uma "Intent" que pode ajudar a pessoa a encontrar remédios durante essa crise, também alertando sobre os riscos da hidroxicloroquina:
 
 | |
 |:-------------------------:|
