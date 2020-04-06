@@ -86,5 +86,7 @@ Junto a esse serviço, também inserimos uma "Intent" que pode ajudar a pessoa a
 |:-------------------------:|
 <img src="https://i.imgur.com/b4G9b7c.jpg" height="550" width="280"> 
 
+Enjoy :)
+
 
 
