@@ -5,18 +5,18 @@
 
 # Mara Detetive
 
-**Este repositório contém arquivos e códigos que foram criados no prazo de alguns dias apenas para fins de validação e testes da nossa idéia. Em nenhum momento nos preocupamos com a arquitetura por trás para obtermos um sistema mais robusto. Caso a idéia vá pra frente, tudo isso será refeito e reestruturado.**
+**Este repositório contém arquivos e códigos que foram criados no prazo de alguns dias apenas para fins de validação e testes da nossa ideia. Em nenhum momento nos preocupamos com a arquitetura por trás para obtermos um sistema mais robusto. Caso a ideia vá pra frente, tudo isso será refeito e reestruturado.**
 
 ### Introdução
 A Mara Detetive nasceu com o propósito de se tornar um assistente virtual capaz de não só, identificar a veracidade de uma notícia como também auxiliar na disseminação de informações. Com o avanço das redes sociais e principalmente dos aplicativos de envio de mensagens, também tivemos um avanço da disseminação de notícias falsas, uma vez que as pessoas estão conseguindo obter informações (nem sempre verdadeiras) de forma mais acelerada.
 
 Podemos perceber que esse problema é causado muitas vezes pela preguiça de ir atrás da notícia em fontes confiáveis ou também pela auto confiança de que aquilo é realmente verdade. Além disso,as pessoas sentem cada vez mais necessidade de conseguir informações de maneira facil e rápido para problemas reais do seu dia da dia.
 
-### A Idéia
+### A Ideia
 Diante desse cenário e da dificuldade em controlar a velocidade que uma notícia falsa pode se propagar, imaginamos um cenário onde o usuário antes de encaminhar uma notícia que recebeu pelo Whatsapp a algum amigo ou grupo específico, ela possa encaminhar essa mensagem para um Bot que consiga extrair aquela notícia e através de um modelo pré-treinado com notícias falsas e verdadeiras, consiga saber se aquela notícia é verdadeira ou não. Não só isso como também, a pessoa poderá procurar por um determinado restaurante o farmácia visto que com a quarentena muitos estabelecimentos estão fechados. 
 
 ### Como fazer isso:
-Para colocar essa idéia em prática utilizaremos algumas ferramentas já disponíveis no mercado que agilizam muito no processo de desenvolvimento: 
+Para colocar essa ideia em prática utilizaremos algumas ferramentas já disponíveis no mercado que agilizam muito no processo de desenvolvimento: 
 
 ### [Twilio - Whatsapp:]("https://www.twilio.com/whatsapp")
 Serviço que possibilita a troca de mensagens através do Whatsapp. No projeto utilizamos para fazer a troca de mensagem entre o Assistant e o usuário.
@@ -24,10 +24,10 @@ Serviço que possibilita a troca de mensagens através do Whatsapp. No projeto u
 ### [Twilio - SMS:]("https://www.twilio.com/sms")
 Serviço que possibilita o envio de SMS para algum usuário. No projeto usamos para simular o envio de uma notificação quando o usuário não encontra a notícia que ele procurou. Nesse caso, o número de algum responsável fica cadastrado no sistema e assim quando ele receber essa notificação, ele pode ir atrás das informações necessárias para treinar o modelo.
 
-### [IBM Waston Discovery:]("https://www.ibm.com/br-pt/cloud/watson-discovery")
+### [IBM Watson Discovery:]("https://www.ibm.com/br-pt/cloud/watson-discovery")
 Serviço que ajuda na criação  de aplicativos relacionados a dados, contando com exploração cognitiva e Inteligência Artificial. Utilizamos ele para criar modelos e treiná-los com notícias falsas e verdadeiras. Além de inserir as notícias, podemos treinar a relevância dos resultados para tornar as respostas mais assertivas. Conforme os usuários usam o serviço, podemos capturar as mensagens que eles estão enviando e usar isso para o treinamento.
 
-### [IBM Waston Assistant:]("https://www.ibm.com/cloud/watson-assistant/")
+### [IBM Watson Assistant:]("https://www.ibm.com/cloud/watson-assistant/")
 Serviço que auxilia na criação de chatbots. No projeto utilizamos para fazer a ponte entre o serviço de envio de mensagens no Whatsapp disponibilizado pela Twilio e o Watson Discovery.
 Funciona assim: Assim que o Watson Assistant recebe uma mensagem, ele analisa qual a intenção do usuário ao enviar aquela mensagem(por exemplo, uma saudação, despedida ou um envio de alguma notícia para análise). Enquanto o assistant não entende que o usuário quer analisar uma notícia, ele apenas vai interagindo com a pessoa com as mensagens que ele foi treinado para enviar. A partir do momento que ele entende que a mensagem é uma notícia que deve ser analisada, ele envia essa mensagem para o Watson Discovery para que ele busque por informações sobre a veracidade. Quando o Discovery obtém uma resposta, ele a retorna e a partir daí o Assistant pode confirmar com o usuário se é aquilo que ele estava buscando ou não.
 
@@ -44,7 +44,7 @@ Ex: Fake News sobre o áudio enviado pelo ministro da saúde. Fonte: https://www
 
 | | |
 |:-------------------------:|:-------------------------:|
-<img src="https://i.imgur.com/p8zookR.jpg" height="550" width="280"> | <img src="https://i.imgur.com/idIekNJ.jpg" height="550" width="280"> 
+<img src="https://i.imgur.com/BLAEasB.jpg" height="550" width="280"> | <img src="https://i.imgur.com/oTXOWpJ.jpg" height="550" width="280"> 
 
 No exemplo abaixo, é solicitada a análise de uma notícia na qual o modelo ainda não foi treinado. Nesse caso, ele busca algo no qual ele acha que pode ser o que o usuário está pedindo. Quando o usuário informa que aquela informação não é o que ele solicitou, enviamos um SMS notificando algum responsável que existe uma possível nova fake news se espalhando e com isso, ele pode ir analisá-la. Essa busca que o usuário fez, poderia ficar salvo em um banco e ser exibido em uma página web(Ainda não foi implementado) e quando o responsável receber a notificação, ele pode ir nesse site obter mais informações sobre a nova possível Fake News.
 
@@ -52,7 +52,7 @@ Ex: Rússia anuncia cura para coronavirus. Fonte: https://www.saude.gov.br/faken
 
 | | |
 |:-------------------------:|:-------------------------:|
-<img src="https://i.imgur.com/nA5BxUp.jpg" height="550" width="280"> | <img src="https://i.imgur.com/LX2TREY.jpg" height="550" width="280">
+<img src="https://i.imgur.com/psQL0hO.jpg" height="550" width="280"> | <img src="https://i.imgur.com/LX2TREY.jpg" height="550" width="280">
 
 As notícias utilizadas para treinar o modelo foram tiradas do site: https://www.saude.gov.br/fakenews
 
@@ -69,7 +69,17 @@ As notícias utilizadas para treinar o modelo foram tiradas do site: https://www
 - [Receita de coco que cura coronavírus](https://www.saude.gov.br/fakenews/46479-receita-de-coco-que-cura-coronavirus-e-fake-news)
 - [Tribunal chinês para matar 20 mil pacientes com coronavírus](https://www.saude.gov.br/fakenews/46439-tribunal-chines-para-matar-20-mil-pacientes-com-coronavirus-e-fake-news)
 
+# Indo além...
+Recentemente a Polícia Federal percorreu por várias rodovias mapeando todos os estabelecimentos que estão abertos durante a quarentena visto que muitos serviços foram fechados. Tudo isso foi feito para ajudar os caminhoneiros a encontrar restaurantes e serviços durante esse período. Para ajudar a disseminar essa informação, também colocamos uma "Intent" que identifica se alguem está em busca de algum restaurante:
+| |
+|:-------------------------:|
+<img src="https://i.imgur.com/DTv1SeN.jpg" height="550" width="280"> 
 
+Junto a esse serviço, também inserimos uma "Intent" que pode ajudar a pessoa a encontrar remédios durante essta crise, também alertando sobre os riscos da hidroxicloroquina:
+
+| |
+|:-------------------------:|
+<img src="https://i.imgur.com/b4G9b7c.jpg" height="550" width="280"> 
 
 
 
