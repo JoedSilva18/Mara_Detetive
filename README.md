@@ -10,10 +10,10 @@
 ### Introdução
 A Mara Detetive nasceu com o propósito de se tornar um assistente virtual capaz de não só, identificar a veracidade de uma notícia como também auxiliar na disseminação de informações. Com o avanço das redes sociais e principalmente dos aplicativos de envio de mensagens, também tivemos um avanço da disseminação de notícias falsas, uma vez que as pessoas estão conseguindo obter informações (nem sempre verdadeiras) de forma mais acelerada.
 
-Podemos perceber que esse problema é causado muitas vezes pela preguiça de ir atrás da notícia em fontes confiáveis ou também pela auto confiança de que aquilo é realmente verdade.
+Podemos perceber que esse problema é causado muitas vezes pela preguiça de ir atrás da notícia em fontes confiáveis ou também pela auto confiança de que aquilo é realmente verdade. Além disso,as pessoas sentem cada vez mais necessidade de conseguir informações de maneira facil e rápido para problemas reais do seu dia da dia.
 
 ### A Idéia
-Diante desse cenário e da dificuldade em controlar a velocidade que uma notícia falsa pode se propagar, imaginamos um cenário onde o usuário antes de encaminhar uma notícia que recebeu pelo Whatsapp a algum amigo ou grupo específico, ela possa encaminhar essa mensagem para um Bot que consiga extrair aquela notícia e através de um modelo pré-treinado com notícias falsas e verdadeiras, consiga saber se aquela notícia é verdadeira ou não.
+Diante desse cenário e da dificuldade em controlar a velocidade que uma notícia falsa pode se propagar, imaginamos um cenário onde o usuário antes de encaminhar uma notícia que recebeu pelo Whatsapp a algum amigo ou grupo específico, ela possa encaminhar essa mensagem para um Bot que consiga extrair aquela notícia e através de um modelo pré-treinado com notícias falsas e verdadeiras, consiga saber se aquela notícia é verdadeira ou não. Não só isso como também, a pessoa poderá procurar por um determinado restaurante o farmácia visto que com a quarentena muitos estabelecimentos estão fechados. 
 
 ### Como fazer isso:
 Para colocar essa idéia em prática utilizaremos algumas ferramentas já disponíveis no mercado que agilizam muito no processo de desenvolvimento: 
