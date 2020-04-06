@@ -1,3 +1,8 @@
+
+<p align="center">
+<img src="https://i.imgur.com/ZznEDCJ.jpg" height="260" width="300">
+</p>
+
 # Mara Detetive
 
 **Este repositório contém arquivos e códigos que foram criados no prazo de alguns dias apenas para fins de validação e testes da nossa idéia. Em nenhum momento nos preocupamos com a arquitetura por trás para obtermos um sistema mais robusto. Caso a idéia vá pra frente, tudo isso será refeito e reestruturado.**
