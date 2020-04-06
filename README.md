@@ -33,7 +33,8 @@ Funciona assim: Assim que o Watson Assistant recebe uma mensagem, ele analisa qu
 
 ### [IBM Cloud Functions:]("https://developer.ibm.com/api/view/cloudfunctions-prod:cloud-functions#Overview")
 
-Para unir todos esses serviços criamos um script em NodeJS e colocamos no Cloud Functions da IBM.
+Para unir todos esses serviços criamos um script em NodeJS(index.js) e colocamos no Cloud Functions da IBM.Link do serviço: 
+https://us-south.functions.cloud.ibm.com/api/v1/web/joedunicamp%40gmail.com_dev/default/whatsapp-two
 
 ### Como testar o serviço:
 - Enviar uma mensagem com o código **join topic-ready** para o número +1 415 523 8886. A partir daí você poderá interagir com o assistente.
